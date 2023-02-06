@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container-centered{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    border-radius: 15px;
+    border: none;
+}
+
+.btn-secondary{ 
+    padding: 8px 50px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.2ch;
+    background-color: #0084FD;
+}
+
+/* START Navbar */
+nav {
+    background-color: #0084FD;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+nav .nav-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    color: white;
+}
+
+nav .nav-inner .nav-left img{
+    width: 80%;
+}
+
+nav .nav-inner .nav-right{
+    display: none;
+}
+/* END Navbar */
+
+/* START Header */
+header .section-card{
+    margin-bottom: 60px;
+}
+
+header .section-card .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    background-color: #b5ddff;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+header .section-card .col .col-details{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+}
+
+header .section-card .col:first-child .col-details{
+    text-align: start;
+}
+
+header .section-card .col .col-details .col-details-title strong{
+    color: #0084FD;
+}
+
+header .section-card .col .col-details .col-details-paragraph p{
+    font-size: 12px;
+    line-height: 2;
+}
+
+header .section-card .col .col-details .col-details-button{
+    display: flex;
+    justify-content: center;
+}
+
+header .section-card .col .col-icon-image{
+    display: flex;
+    justify-content: center;
+}
+
+header .section-card .col .col-details .col-icon-image i{
+    font-size: 60px;
+    color: #0084FD;
+}
+
+header .section-card .col .col-icon-image img{
+    width: 70%;
+    margin-bottom: -20px;
+}
+/* END Header */
+main .strategic-planning {
+    background-color: #9792E4;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+main .strategic-planning .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+main .strategic-planning .col .col-details{
+    color: white;
+}
+
+main .strategic-planning .col .col-icon-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .strategic-planning .col .col-icon-image img{
+    width: 90%;
+}
+
+main .strategic-planning .col .col-details .col-details-title{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+main .strategic-planning .col .col-details .col-details-paragraph{
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+main .strategic-planning .col:nth-child(2){
+    background-color: white;
+    border-radius: 50px;
+    padding: 40px 20px;
+}
+
+main .strategic-planning .col:nth-child(2) .col-details .col-details-title,
+main .strategic-planning .col:nth-child(2) .col-details .col-details-paragraph{
+    color: black;
+    text-align: center;
+}
+
+main .strategic-planning .col:nth-child(2) .col-details .col-details-paragraph{
+    font-style: italic;
+}
+
+main .strategic-planning .col:nth-child(2) .col-details .col-details-title{
+    font-size: 22px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col-details-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.btn-third {
+    border-radius: 50%;
+    background-color: #9792E4;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+}
+
+/* Start section Expert partners */
+main .expert-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+main .expert-partners .col{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    background-color: #9792E4;
+    color: white;
+    padding: 30px 10px;
+    border-radius: 50px;
+}
+
+main .expert-partners .col .col-details .col-details-paragraph{
+    font-size: 16px;
+    padding-bottom: 20px;
+    line-height: 2;
+}
+
+main .expert-partners .col .col-details .col-details-paragraph i{
+    font-size: 22px; 
+    padding-right: 8px;
+}
+
+main .expert-partners .col .col-details .col-details-paragraph i:last-child{
+    padding-left: 8px;
+}
+
+main .expert-partners .col .col-icon-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .expert-partners .col .col-icon-image img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* end section Expert partners */
+
+/* Start section benefit */
+main .benefit{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #9792E4;
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+main .benefit h3{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+}
+
+main .benefit .col{
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 30px;
+}
+
+main .benefit .col .col-details .col-icon-number {
+    font-size: 48px;
+    color: #9792E4;
+}
+
+main .benefit .col .col-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .benefit .col .col-details .col-details-title{
+    color: #9792E4;
+    font-size: 22px;
+}
+
+main .benefit .col .col-details .col-details-paragraph{
+    line-height: 2;
+    font-size: 15px;
+}
+
+main .benefit .col .col-details .col-details-button{
+    display: flex;
+    justify-content: flex-start;
+}
+
+main .benefit .col .col-details .col-details-button .btn-four{
+    background-color: #9792E4;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.2ch;
+    padding: 10px 50px;
+}
+/* End section benefit */
+
+/* Start about us section */
+main .about-us{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+main .about-us .about-us-text h2{
+    font-size: 40px;
+    color: #9792E4;
+    padding-bottom: 30px;
+}
+
+main .about-us .about-us-text p{
+    line-height: 2;
+    padding-bottom: 40px;
+}
+
+main .about-us .about-us-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .about-us .about-us-card .about-us-image{
+    position: relative;
+}
+
+main .about-us .about-us-card .about-us-image .quotation i{
+    position: absolute;
+    top: 0;
+    right: 114px;
+    font-size: 70px;
+    color: #9792E4;
+}
+
+
+main .about-us .about-us-card img{
+    width: 60%;
+    border-radius: 50%;
+}
+
+main .about-us .about-us-card .about-us-card-paragraph{
+    color: #9792E4;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+main .about-us .about-us-card .about-us-card-button button{
+    background-color: #9792E4;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+
+.fa-linkedin{
+    font-size: 16px;
+    padding-right: 10px;
+}
+/* end about us section */
+
+/* start get started section */
+main .get-started{
+    background-color: #9792E4;
+}
+
+main .get-started .get-started-element{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 0;
+    text-align: center;
+}
+
+main .get-started .get-started-element div:first-child{
+    color: rgb(242, 242, 242);
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+main .get-started .get-started-element .price-description{
+    font-size: 26px;
+    color: white;
+}
+
+main .get-started .get-started-element .its-free{
+    color: #FDC15F;
+    font-size: 52px;
+}
+
+main .get-started .get-started-element p{
+    color: white;
+    line-height: 2;
+}
+
+main .get-started .get-started-element .get-started-button button{
+    padding: 20px 80px;
+    border: none;
+    border-radius: 50px;
+    color: #9792E4;
+    font-size: 18px;
+    letter-spacing: 0.2ch;
+}
+
+main .get-started-element ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    list-style-type: none;
+    color: white;
+}
+
+main .get-started-element ul a{
+    color: white;
+}
+/* end get started section */
+
+/* Start footer */
+footer {
+    background-color: #333333;
+}
+
+footer a{
+    color: #9792E4;
+    padding-right: 4px;
+}
+
+footer .footer-text{
+    padding: 40px 0;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+footer .footer-text p:first-child{
+    padding-bottom: 60px;
+}
+
+/* End footer */
+
+
+@media screen and (min-width: 577px) and (max-width: 992){
+    
+}
