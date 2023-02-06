@@ -15,20 +15,23 @@ body{
 }
 
 .btn {
-    border-radius: 15px;
+    border-radius: 50px;
     border: none;
 }
 
 .btn-secondary{ 
-    padding: 8px 50px;
+    padding: 14px 50px;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.2ch;
     background-color: #0084FD;
 }
 
 /* START Navbar */
 nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
     background-color: #0084FD;
     height: 60px;
     margin-bottom: 30px;
@@ -52,27 +55,29 @@ nav .nav-inner .nav-right{
 /* END Navbar */
 
 /* START Header */
-header .section-card{
-    margin-bottom: 60px;
+header{
+    padding-top: 100px;
 }
-
-header .section-card .col{
+header .section-card{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+header .section-card .col{
     background-color: #b5ddff;
     border-radius: 10px;
-    padding: 20px 30px;
 }
 
 header .section-card .col .col-details{
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 10px;
     text-align: center;
+    padding: 30px 30px;
 }
 
 header .section-card .col:first-child .col-details{
@@ -104,8 +109,7 @@ header .section-card .col .col-details .col-icon-image i{
 }
 
 header .section-card .col .col-icon-image img{
-    width: 70%;
-    margin-bottom: -20px;
+    width: 80%;
 }
 /* END Header */
 main .strategic-planning {
@@ -149,23 +153,23 @@ main .strategic-planning .col .col-details .col-details-paragraph{
     line-height: 1.8;
 }
 
-main .strategic-planning .col:nth-child(2){
+main .strategic-planning .col-2{
     background-color: white;
     border-radius: 50px;
     padding: 40px 20px;
 }
 
-main .strategic-planning .col:nth-child(2) .col-details .col-details-title,
-main .strategic-planning .col:nth-child(2) .col-details .col-details-paragraph{
+main .strategic-planning .col-2 .col-details .col-details-title,
+main .strategic-planning .col-2 .col-details .col-details-paragraph{
     color: black;
     text-align: center;
 }
 
-main .strategic-planning .col:nth-child(2) .col-details .col-details-paragraph{
+main .strategic-planning .col-2 .col-details .col-details-paragraph{
     font-style: italic;
 }
 
-main .strategic-planning .col:nth-child(2) .col-details .col-details-title{
+main .strategic-planning .col-2 .col-details .col-details-title{
     font-size: 22px;
     padding-top: 20px;
     margin-bottom: 20px;
@@ -189,9 +193,26 @@ main .strategic-planning .col:nth-child(2) .col-details .col-details-title{
 main .expert-partners {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 30px;
     margin-bottom: 40px;
+}
+
+main .expert-partners-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+main .expert-partners-text p{
+    line-height: 2;
+    text-align: center;
+}
+
+main .expert-partners h2{
+    color: #9792E4;
+    font-size: 30px;
+    text-align: center;
 }
 
 main .expert-partners .col{
@@ -236,21 +257,25 @@ main .expert-partners .col .col-icon-image img{
 
 /* Start section benefit */
 main .benefit{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     background-color: #9792E4;
     padding: 60px 0;
     margin-bottom: 40px;
+}
+
+main .benefit-item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 main .benefit h3{
     color: white;
     text-align: center;
     font-size: 36px;
+    padding-bottom: 60px;
 }
 
-main .benefit .col{
+main .benefit .benefit-item .col{
     background-color: white;
     border-radius: 20px;
     padding: 30px 30px;
@@ -434,6 +459,220 @@ footer .footer-text p:first-child{
 /* End footer */
 
 
-@media screen and (min-width: 577px) and (max-width: 992){
+@media screen and (min-width: 577px){
+    header .section-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    header .section-card .col:first-child{
+        width: calc(100% / 3 * 2 - (20px / 3));
+        
+    }
+
+    header .section-card .col{
+        width: calc(100% / 3 - (20px / 3 * 2));
+    }
+
+    header .section-card .col .col-details{
+        gap: 20px;
+    }
+
+    header .section-card .col .col-details .col-details-paragraph p{
+        font-size: 16px;
+    }
+
+    header .section-card .col:first-child .col-icon-image,
+    header .section-card .col .col-details .col-details-button{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header .section-card .col:first-child  .col-icon-image img{
+        width: 60%;
+        padding-left: 30px;
+    }
+
+    main .strategic-planning .col .col-details .col-details-title{
+        font-size:  60px;
+    }
+
+    main .expert-partners .col{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: start;
+    }
     
+    main .benefit .benefit-item{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main .benefit .benefit-item .col{
+        width: calc(100% / 2 - 20px);
+    }
+
+    main .about-us{
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        gap: 60px;
+    }
+
+    main .about-us .about-us-text{
+        width: 65%;
+    }
+
+    main .about-us .about-us-text h2{
+        font-size: 54px;
+    }
+
+    main .about-us .about-us-card{
+        width: 35%;
+    }
+
+    main .about-us .about-us-card img{
+        width: 90%;
+    }
+
+    main .about-us .about-us-card .about-us-card-paragraph{
+        font-size: 28px;
+    }
+
+    main .about-us .about-us-card .about-us-image .quotation i{
+        right: 0;
+        top: 0;
+    }
+
+    main .get-started .get-started-element .price-description{
+        font-size: 40px;
+    }
+
+    main .get-started .get-started-element .its-free{
+        font-size: 74px;
+    }
+
+    main .get-started .get-started-element p{
+        width: 70%;
+        margin: 0 auto;
+    }
+    footer .footer-text{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .nav-hamburger-menu{
+        display: none;
+    }
+    nav .nav-inner .nav-right{
+        display: flex;
+    }
+
+    nav .nav-inner .nav-right ul{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        list-style-type: none;
+    }
+
+    nav .nav-inner .nav-right ul a{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .btn-primary{
+        border: none;
+        padding: 6px 12px;
+        background-color: white;
+        font-size: 12px;
+    }
+
+    header .section-card .col:first-child{
+        display: flex;
+        flex-direction: row;
+    }
+
+    header .section-card .col:first-child .col-icon-image{
+        display: flex;
+        align-items: flex-end;
+        padding-right: 60px;
+    }
+
+    header .section-card .col:first-child .col-icon-image img{
+        width: 100%;
+    }
+
+    main .strategic-planning .strategic-planning-container-centered{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main .strategic-planning .col .col-details .col-details-title{
+        font-size: 26px;
+    }
+
+    main .strategic-planning .col .col-details .col-details-paragraph{
+        font-size: 14px;
+    }
+
+    main .strategic-planning .col-1 .col-icon-image{
+        padding-top: 50px;
+    }
+
+    main .strategic-planning .col-1{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    main .strategic-planning .col-2{
+        padding: 20px 20px;
+    }
+
+    main .strategic-planning .col-2 .col-details .col-details-title{
+        font-size: 16px;
+    }
+
+    main .strategic-planning .col-2 .col-details .col-details-paragraph{
+        font-size: 12px;
+    }
+
+    main .about-us .about-us-card .about-us-image .quotation i{
+        font-size: 80px;
+    }
+
+    main .about-us .about-us-text{
+        width: 70%;
+    }
+
+    main .about-us .about-us-card{
+        width: 25%;
+    }
+
+    main .benefit .benefit-item{
+        gap: 30px;
+    }
+
+    main .benefit .benefit-item .col{
+        width: calc(100% / 3 - 20px);
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .container-centered{
+        max-width: 1200px;
+    }
+
 }
